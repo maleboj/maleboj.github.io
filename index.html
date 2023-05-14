@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-</head>
-<body>
-    <h1>My work I had done</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Malebo J</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>MY Capstone Project</h1>
+    </header>
+
+    <main>
+      <p>Welcome to my basic website. This is the home page.</p>
+    </main>
+
+    <img
+      src="WA0000.jpg"
+      alt="Image of Joshua, the author of the page"
+      class="image"
+    />
+
+    <details>
+      <summary>I created a Fully functional Math Problem Solver</summary>
+      <p>
+        Front-end: Home page:<br />
+        <br />
+        The home page will include a brief introduction to the website and its
+        purpose. There will be a button to start solving mathematical problems.
+        Math problem solving page: On this page, users can insert mathematical
+        problems such as power expressions, functions, integration, cos, and
+        sign. There will be a scientific calculator to help users input complex
+        expressions. Users can also upload images of mathematical problems, and
+        the website will scan the image for text and convert it to a readable
+        format. Once the problem is entered, the website will give a full
+        solution to the problem, including any necessary steps and explanations.
+        The page will also show any graphs that are relevant to the problem.
+        <br />
+        <br />
+        Back-end: Image-to-text converter: <br />
+        <br />
+        The website will use an OCR (Optical Character Recognition) tool to
+        convert any uploaded images of mathematical problems into text that can
+        be read by the website. Math problem solver: The website will use a math
+        problem solver tool to solve the mathematical problems entered by the
+        user. The tool will be able to handle power expressions, functions,
+        integration, cos, and sign, as well as any other relevant mathematical
+        concepts. Graph generator: The website will use a graph generator tool
+        to create graphs for any mathematical problems that require them.
+      </p>
+    </details>
+    <div class="container">
+      <h1 class="heading">Dad Joke Generator</h1>
+      <p class="joke" id="joke">Dad Joke</p>
+      <button class="btn" id="btn">Tell me a joke</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Coursera Capstone. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+  </body>
 </html>
