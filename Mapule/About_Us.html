@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="slide.css" />
+    <title>Maps Beauty Bar</title>
+  </head>
+  <body>
+    <nav>
+      <h1 class="h1">Maps Beauty Bar</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Book</a></li>
+        <li><a href="About_Us.html">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shopp Now</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!--Image slider will start here-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio button start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!--radio buttons end-->
+          <!--slide image start here-->
+          <div class="slide first">
+            <img src="media/123.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="media/slide.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="media/slide2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="media/slide3.jpg" alt="" />
+          </div>
+          <!--slide image ends here-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual naviation end-->
+      </div>
+      <!--image slider ends here-->
+      <div>
+        <h1>Welcome to Maps Beauty Bar!</h1>
+        <p class="p">
+          At our salon, we offer a wide range of services to help you look and
+          feel your best. Our team of experienced professionals is dedicated to
+          providing you with the highest quality hair and beauty treatments,
+          including haircuts, color, styling, and more. We also specialize in
+          hair wigs and hair extensions, offering a variety of options to help
+          you achieve the look you want. Our selection of hair products includes
+          top-of-the-line brands to help you maintain healthy, beautiful hair
+          between salon visits. In addition to hair services, we offer a range
+          of beauty treatments, including facials, manicures, pedicures, and
+          makeup application. Whether you're getting ready for a special
+          occasion or simply want to pamper yourself, we're here to make you
+          look and feel amazing. Visit us today and experience the difference at
+          Maps Beauty Bar.
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

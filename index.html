@@ -18,11 +18,12 @@
     </nav>
 
     <header>
-      <h1>MY Capstone Project</h1>
+      <h1>Profile</h1>
     </header>
 
     <main>
       <p>Welcome to my basic website. This is the home page.</p>
+      
     </main>
 
     <img
@@ -32,32 +33,42 @@
     />
 
     <details>
-      <summary>I created a Fully functional Math Problem Solver</summary>
+      <summary>Here is one of my Favourite Projects The Dad Joke Generator</summary>
       <p>
-        Front-end: Home page:<br />
+        Break down of the Code:<br />
         <br />
-        The home page will include a brief introduction to the website and its
-        purpose. There will be a button to start solving mathematical problems.
-        Math problem solving page: On this page, users can insert mathematical
-        problems such as power expressions, functions, integration, cos, and
-        sign. There will be a scientific calculator to help users input complex
-        expressions. Users can also upload images of mathematical problems, and
-        the website will scan the image for text and convert it to a readable
-        format. Once the problem is entered, the website will give a full
-        solution to the problem, including any necessary steps and explanations.
-        The page will also show any graphs that are relevant to the problem.
+        In Order to showcase my knowldge in html and javascript I have developed a 
+        fun project. Called Dad Jokes, this was demostrate, My knowldge of Javascript and API's.
+        So here is the brief presentation.
+        <h4>HTML Code</h4>
+        <ul>
+          <li>The code is a simple layout using HTML tags</li>
+          <li>It consists of a container <code>div</code> that contains a heading <code>h1</code>, a joke <code>p</code> element, and a <code>button</code>
+          <li>The element have assigned <code>id</code> attributes that can be used to reference them in <code>Javascript.</code>  </li>
+        </ul>
+
+        <h4>Javascript</h4>
+        <h5>The JavaScript code manipulates the HTML elements and interacts with an external API to fetch a dad joke.</h5>
+
+        <h5> Variable Declarations</h5>
+        <ul>
+          <li>I used <code>btnEl </code>and <code>jokeEl</code>  variables to store references to the HTML elements with the corresponding <code>id</code> attributes.</li>
+          <li>Then I used an <code>apiKey</code> for authentication</li>
+        </ul>
+        
+     
+        Function <code>getJoke()</code>: 
         <br />
-        <br />
-        Back-end: Image-to-text converter: <br />
-        <br />
-        The website will use an OCR (Optical Character Recognition) tool to
-        convert any uploaded images of mathematical problems into text that can
-        be read by the website. Math problem solver: The website will use a math
-        problem solver tool to solve the mathematical problems entered by the
-        user. The tool will be able to handle power expressions, functions,
-        integration, cos, and sign, as well as any other relevant mathematical
-        concepts. Graph generator: The website will use a graph generator tool
-        to create graphs for any mathematical problems that require them.
+        <ol>
+          <li>This asynchronous function is triggered when the button is clicked.</li>
+          <li>It updates the text of the joke element to show "Updating..." and disables the button.</li>
+          <li>It then sends a GET request to the dad joke API using fetch() with the provided URL and options.</li>
+          <li>The response is converted to JSON format using response.json().</li>
+          <li>The first joke from the received data is assigned to the jokeEl element's innerText.</li>
+          <li>If any error occurs during the process, an error message is displayed, and the button is re-enabled.</li>
+        </ol>
+              
+                
       </p>
     </details>
     <div class="container">
@@ -67,8 +78,9 @@
     </div>
 
     <footer>
-      <p>&copy; 2023 Coursera Capstone. All rights reserved.</p>
+      <p>&copy; 2023 Malebo Joshua Seiti. Profile. <a href="https://www.linkedin.com/in/malebo-seiti/">LinkedIn</a></p>
     </footer>
+    
     <script src="script1.js"></script>
   </body>
 </html>

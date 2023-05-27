@@ -1,0 +1,85 @@
+.grid {
+    position: relative;
+    width: 560px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 80px auto;
+    background-color: #5c5066;
+  }
+
+  body {
+    background-image: url('images/bkground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons button {
+    margin: 5px;
+}
+
+  
+  .block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 4px;
+  }
+  
+  .user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: hotpink;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 4px;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
+#score {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.volume-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.volume-controls button {
+  margin: 0 5px;
+}
+
+.play-pause {
+  display: flex;
+  justify-content: center;
+}
+
+.play-pause button {
+  margin: 0 5px;
+}

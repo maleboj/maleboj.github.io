@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Game</title>
+    <link rel="stylesheet" href="break.css">
+</head>
+<body>
+    <div id="score">0</div>
+    <div class="grid"></div>
+
+    <!-- Audio elements -->
+    <audio id="blockSound" src="audio/blockhit.mp3"></audio>
+    <audio id="win" src="audio/win.mp3"></audio>
+    <audio id="lose" src="audio/lose.mp3"></audio>
+
+    <div class="buttons">
+        <button id="pauseButton">Pause</button>
+        <button id="playButton">Play</button>
+    </div>
+
+    <div class="controls">
+        <div class="volume-controls">
+          <button id="volumeDownBtn">Volume Down</button>
+          <button id="muteBtn">Mute/Unmute</button>
+          <button id="volumeUpBtn">Volume Up</button>
+        </div>
+
+
+    <script src="break.js"></script>
+</body>
+</html>

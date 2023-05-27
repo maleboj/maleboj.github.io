@@ -1,0 +1,13 @@
+.input{
+    border:1px solid black;
+}
+
+.input{
+    background-color: aquamarine;
+}
+
+.nick{
+    margin-left: 4%;
+    display: hide;
+    width: 50%;
+}
